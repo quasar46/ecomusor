@@ -1,0 +1,62 @@
+doctype html
+html(lang="ru")
+  include ../modules/head
+  body
+
+    .wrapper
+      include ../modules/header
+      main.lk 
+        aside.lk-aside 
+          .lk-aside__box 
+            a(href="lk-ads.html").lk-aside__link.active 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-1")
+              span Все объявления
+            a(href="lk-deal.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-2")
+              span Сделки
+            a(href="lk-favorite.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-3")
+              span Избранное
+            a(href="lk-chat.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-4")
+              span Чат
+            a(href="lk-common.html" data-count="3").lk-aside__link.lk-aside__link--count
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-5")
+              span Уведомления
+            a(href="lk-subscribtion-common.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-6")
+              span Подписки
+          .lk-aside__box 
+            a(href="lk-profile-personal.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-7")
+              span Профиль 
+            a(href="lk-organization-common.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-8")
+              span Организация
+            a(href="lk-balance-common.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-9")
+              span Баланс
+          .lk-aside__box 
+            a(href="lk-support.html").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-10")
+              span Поддержка
+            a(href="").lk-aside__link 
+              svg.left-menu-icn(width="20" height="20")
+                use(xlink:href="#icon-11")
+              span Выйти
+
+        block content 
+
+        include ../modules/footer
+
+      include ../modules/script

@@ -1,0 +1,33 @@
+.table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border-collapse: collapse;
+
+    tr {
+        border-left: 1px solid #E9EFF1;
+        border-right: 1px solid #E9EFF1;
+    }
+
+    th,
+    td {
+        text-align: left;
+    }
+
+    th {
+        height: 50px;
+        background-color: #EFF2F5;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    td {
+        height: 44px;
+        border-bottom: 1px solid #E9EFF1;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 300;
+        background-color: #FAFCFD;
+    }
+}

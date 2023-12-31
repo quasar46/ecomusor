@@ -1,0 +1,250 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Сделка
+        .stub В этом разделе отображаются сделки, в которых вы участвуете. <br>На данный момент сделок нет.
+
+        .deal
+            ._container
+                .deal__wrap
+                    .deal__head 
+                        h2.title-page Добавление ставки
+                        .card-aside__user 
+                            img.card-aside__user-pic(src="img/user.png" alt="")
+                            .card-aside__user-col
+                                h6.card-aside__user-name Иван Иванович
+                                p.card-aside__user-descr ООО «АгроКолеса»
+                            img.card-aside__user-icn(src="img/icns/ChatsCircle.svg" alt="")
+
+                    .white-block 
+                        .deal-cart 
+                            .deal-card__head 
+                                img(src="img/Rectangle7.png" alt="")
+                                .deal-cart__col 
+                                    span.deal-cart__category Электроника и бытовая техника
+                                    span.deal-cart__name Продам оргтехнику
+                                    span.deal-cart__descr Turpis vivamus facilisis quam enim. Vel id arcu posuere mi suspendisse turpis sit. Ultrices nam aliquet mauris tellus in ornare. 
+                                    .deal-cart__date 
+                                        span Дата завершения аукциона: 
+                                        span 24.04.2011 16:53
+                            .deal-cart__content 
+                                .deal-cart__content-col 
+                                    .deal-cart__content-row 
+                                        .deal-cart__content-label Сделать ставку
+                                        .deal-cart__content-form 
+                                            .deal-cart__content-input
+                                                input(type="text" placeholder='620 000 ')
+                                                span руб.
+                                            button.btn.btn--gradient.btn--m Подтвердить
+                                        span.deal-cart__price-item (4000 руб за 1 штуку)
+                                    .deal-cart__content-row 
+                                        .deal-cart__content-label Текущая  максимальная ставка
+                                        .deal-cart__price-wrap
+                                            .deal-cart__content-price 
+                                                span.deal-cart__price-total 600 000 руб
+                                                span.deal-cart__price-item (4000 руб за 1 штуку)
+                                    .deal-cart__content-row 
+                                        .deal-cart__content-row-col 
+                                            .deal-cart__content-label Цена выкупа
+                                            .deal-cart__price-wrap
+                                                .deal-cart__content-price 
+                                                    span.deal-cart__price-total 600 000 руб
+                                                    span.deal-cart__price-item (4000 руб за 1 штуку)
+                                                .deal-cart__content-row-col
+                                                    button.btn.btn--w.btn--xs Выкупить лот
+                                    .deal-cart__content-footer 
+                                        span Безналичный расчет без НДС
+                                .deal-cart__content-col.deal-cart__content-col--status
+                                    .deal-cart__status 
+                                        span Идет сбор заявок
+                                        span 39 дн 11 ч 38 мин
+
+
+                .deal__wrap
+                    .deal__head 
+                        h2.title-page Повышение ставки
+                        .card-aside__user 
+                            img.card-aside__user-pic(src="img/user.png" alt="")
+                            .card-aside__user-col
+                                h6.card-aside__user-name Иван Иванович
+                                p.card-aside__user-descr ООО «АгроКолеса»
+                            img.card-aside__user-icn(src="img/icns/ChatsCircle.svg" alt="")
+
+                    .white-block 
+                        .deal-cart 
+                            .deal-card__head 
+                                img(src="img/Rectangle7.png" alt="")
+                                .deal-cart__col 
+                                    span.deal-cart__category Электроника и бытовая техника
+                                    span.deal-cart__name Продам оргтехнику
+                                    span.deal-cart__descr Turpis vivamus facilisis quam enim. Vel id arcu posuere mi suspendisse turpis sit. Ultrices nam aliquet mauris tellus in ornare. 
+                                    .deal-cart__date 
+                                        span Дата завершения аукциона: 
+                                        span 24.04.2011 16:53
+                            .deal-cart__content 
+                                .deal-cart__content-col 
+                                    .deal-cart__content-row 
+                                        .deal-cart__content-label Ваша предыдущая ставка
+                                        .deal-cart__content-form 
+                                            .deal-cart__content-input
+                                                input(type="text" placeholder='620 000 ')
+                                                span руб.
+                                            button.btn.btn--gradient.btn--m Подтвердить
+                                        span.deal-cart__price-item (4000 руб за 1 штуку)
+                                    .deal-cart__content-row 
+                                        .deal-cart__content-label Текущая  максимальная ставка
+                                        .deal-cart__price-wrap
+                                            .deal-cart__content-price 
+                                                span.deal-cart__price-total 600 000 руб
+                                                span.deal-cart__price-item (4000 руб за 1 штуку)
+                                    .deal-cart__content-row 
+                                        .deal-cart__content-row-col 
+                                            .deal-cart__content-label Цена выкупа
+                                            .deal-cart__price-wrap
+                                                .deal-cart__content-price 
+                                                    span.deal-cart__price-total 600 000 руб
+                                                    span.deal-cart__price-item (4000 руб за 1 штуку)
+                                                .deal-cart__content-row-col
+                                                    button.btn.btn--w.btn--xs Выкупить лот
+                                    .deal-cart__content-footer 
+                                        span Безналичный расчет без НДС
+                                .deal-cart__content-col.deal-cart__content-col--status
+                                    .deal-cart__status 
+                                        span Идет сбор заявок
+                                        span 39 дн 11 ч 38 мин
+                                    button.btn.btn--gradient.btn--m Отказаться от ставки
+
+
+
+
+                .deal__wrap
+                    .deal__head 
+                        h2.title-page Повышение ставки
+                        .card-aside__user 
+                            img.card-aside__user-pic(src="img/user.png" alt="")
+                            .card-aside__user-col
+                                h6.card-aside__user-name Иван Иванович
+                                p.card-aside__user-descr ООО «АгроКолеса»
+                            img.card-aside__user-icn(src="img/icns/ChatsCircle.svg" alt="")
+
+                    .white-block 
+                        .deal-cart 
+                            .deal-card__head 
+                                img(src="img/Rectangle7.png" alt="")
+                                .deal-cart__col 
+                                    span.deal-cart__category Электроника и бытовая техника
+                                    span.deal-cart__name Продам оргтехнику
+                                    span.deal-cart__descr Turpis vivamus facilisis quam enim. Vel id arcu posuere mi suspendisse turpis sit. Ultrices nam aliquet mauris tellus in ornare. 
+                                    .deal-cart__date 
+                                        span Дата завершения аукциона: 
+                                        span 24.04.2011 16:53
+                            .deal-cart__content.deal-cart__content--mode
+                                .deal-cart__content-col.deal-cart__content-col--status 
+                                    .deal-cart__status 
+                                        span Идет сбор заявок
+                                        span 39 дн 11 ч 38 мин
+                                .deal-cart__content-label.deal-cart__content-label--mode Информация по ставкам на лот
+                                table.table 
+                                    thead 
+                                        tr
+                                            th Пользователь
+                                            th Сумма, ₽
+                                    tbody
+                                        tr
+                                            td Иван Иванович
+                                            td 500 000
+                                        tr
+                                            td Макар Макарович
+                                            td 550 000
+                                        tr
+                                            td Алексей Алексеевич
+                                            td 600 000
+                                        tr
+                                            td Иван Иванович
+                                            td 620 000
+
+
+
+                .deal__wrap
+                    .deal__head 
+                        h2.title-page Повышение ставки
+                        .card-aside__user 
+                            img.card-aside__user-pic(src="img/user.png" alt="")
+                            .card-aside__user-col
+                                h6.card-aside__user-name Иван Иванович
+                                p.card-aside__user-descr ООО «АгроКолеса»
+                            img.card-aside__user-icn(src="img/icns/ChatsCircle.svg" alt="")
+
+                    .white-block 
+                        .deal-cart 
+                            .deal-card__head 
+                                img(src="img/Rectangle7.png" alt="")
+                                .deal-cart__col 
+                                    span.deal-cart__category Электроника и бытовая техника
+                                    span.deal-cart__name Продам оргтехнику
+                                    span.deal-cart__descr Turpis vivamus facilisis quam enim. Vel id arcu posuere mi suspendisse turpis sit. Ultrices nam aliquet mauris tellus in ornare. 
+                                    .deal-cart__date 
+                                        span Дата завершения аукциона: 
+                                        span 24.04.2011 16:53
+                            .deal-cart__content.deal-cart__content--mode
+                                .deal-cart__content-col.deal-cart__content-col--status 
+                                    .deal-cart__status 
+                                        span Идет сбор заявок
+                                        span 39 дн 11 ч 38 мин
+                                .deal-cart__content-label.deal-cart__content-label--mode Информация по ставкам на лот
+                                table.table 
+                                    thead 
+                                        tr
+                                            th Дата
+                                            th Пользователь
+                                            th Сумма, ₽
+                                    tbody
+                                        tr
+                                            td 23.03.2022
+                                            td Иван Иванович
+                                            td 500 000
+                                        tr
+                                            td 23.03.2022
+                                            td Макар Макарович
+                                            td 550 000
+                                        tr
+                                            td 23.03.2022
+                                            td Алексей Алексеевич
+                                            td 600 000
+                                        tr
+                                            td 23.03.2022
+                                            td Иван Иванович
+                                            td 620 000                                            
+
+
+
+                .deal__wrap
+                    .deal__head 
+                        h2.title-page Список ставок
+                    .white-block 
+                        .deal-cart 
+                            .deal-cart__content-label.deal-cart__content-label--mode Информация по всем вашим ставкам
+                            table.table 
+                                thead 
+                                    tr
+                                        th Дата
+                                        th Лот
+                                        th Сумма, ₽
+                                tbody
+                                    tr
+                                        td 23.03.2022
+                                        td <b>Продам оргтехнику</b>
+                                        td 500 000
+                                    tr
+                                        td 23.03.2022
+                                        td <b>Отходы резины / Шины, покрышки</b>
+                                        td 550 000
+                                    tr
+                                        td 23.03.2022
+                                        td <b>Картон (МС-13В)</b>
+                                        td 600 000
+                                    tr
+                                        td 23.03.2022
+                                        td <b>Продам оргтехнику</b>
+                                        td 620 000                                                                                        

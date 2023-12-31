@@ -1,0 +1,64 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Подписки
+        .tabs 
+            .tabs__caption 
+                a(href="lk-subscribtion-common.html") Общие
+                a.active BMP и вторсырье
+                a(href="lk-subscribtion-services.html") Услуги по РОП
+            .tabs__content.tabs__content--m  
+                .border-l
+                    p Уведомления можно получать на выбранные категории и типы ВМР. Укажите основные и дополнительные параметры вторсырья, которые вас интересуют.
+                form.form
+                    ul.form__list.form__list--grid 
+                        li.form__item 
+                            label.form__label(for="") Вторсырье
+                            .form__input
+                                select.mySelect
+                                    option(value="") Выберете из списка
+                                    option(value="") Выберете из списка
+                        li.form__item 
+                            label.form__label(for="") Тип материала
+                            .form__input
+                                select.mySelect
+                                    option(value="") Выберете из списка
+                                    option(value="") Выберете из списка
+                        li.form__item 
+                            label.form__label(for="") Еденица измерения
+                            .form__input
+                                select.mySelect
+                                    option(value="") Выберете из списка
+                                    option(value="") Выберете из списка 
+                        li.form__item 
+                            label.form__label(for="") Количество
+                            .form__input
+                                input.input(type="text" placeholder="От")
+                                input.input(type="text" placeholder="До")
+                        li.form__item 
+                            label.form__label(for="") Цена, руб
+                            .form__input
+                                input.input(type="text" placeholder="От")
+                                input.input(type="text" placeholder="До")
+
+                .edit-block
+                    .edit-block__col 
+                        .edit-block__item
+                            span.edit-block__title Вторсырье: &nbsp; 
+                            span.edit-block__text  Пластики
+                        .edit-block__item
+                            span.edit-block__title Тип: &nbsp;
+                            span.edit-block__text  Полиэтилентерефталат - ПЭТ (1 PET)
+                    .edit-block__col    
+                        .edit-block__actions 
+                            button.btn-icn 
+                                svg(width="20px" height="20px")
+                                    use(xlink:href="#edit-icn")
+
+                            button.btn-icn 
+                                svg(width="20px" height="20px") 
+                                    use(xlink:href="#basket-icn")
+                .block-footer 
+                    button.btn.btn--g.btn--m Сохранить изменения
+                    button.btn-grey Отменить

@@ -1,0 +1,58 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Подписки
+        .tabs 
+            .tabs__caption 
+                a(href="lk-subscribtion-common.html") Общие
+                a(href="lk-subscribtion-bmp.html") BMP и вторсырье
+                a.active Услуги по РОП
+            .tabs__content.tabs__content--m  
+                .border-l
+                    p Уведомления можно получать на выбранные категории и типы ВМР. Укажите основные и дополнительные параметры вторсырья, которые вас интересуют.
+                form.form
+                    ul.form__list.form__list--grid.form__list--grid-mode
+                        li.form__item.ga1 
+                            label.form__label(for="") Вторсырье
+                            .form__input.input-error
+                                .error Ошибка
+                                select.mySelect
+                                    option(value="") Выберете из списка
+                                    option(value="") Выберете из списка
+                        li.form__item.ga2 
+                            label.form__label(for="") Тип материала
+                            .form__input.input-error
+                                .error Ошибка
+                                select.mySelect
+                                    option(value="") Выберете из списка
+                                    option(value="") Выберете из списка
+                        li.form__item.ga3 
+                            label.form__label(for="") Еденица измерения
+                            .form__input.input-error
+                                .error Ошибка
+                                select.mySelect
+                                    option(value="") Выберете из списка
+                                    option(value="") Выберете из списка 
+                        li.form__item.ga4 
+                            label.form__label(for="") Количество
+                            .form__input.input-error
+                                .error Ошибка
+                                input.input(type="text" placeholder="От")
+                                input.input(type="text" placeholder="До")
+                        li.form__item.ga5 
+                            label.form__label(for="") Адрес утилизатора
+                            .form__input.input-error
+                                .error Ошибка
+                                svg.form__icn(width="24" height="24")
+                                    use(xlink:href="#close-input-icn")
+                                input.input.input--icn(type="text" placeholder="Введите адрес")
+                        li.form__item.ga6 
+                            label.form__label(for="") Цена, руб
+                            .form__input.input-error
+                                .error Ошибка
+                                input.input(type="text" placeholder="От")
+                                input.input(type="text" placeholder="До")
+                .block-footer 
+                    button.btn.btn--g.btn--m Сохранить изменения
+                    button.btn-grey Отменить

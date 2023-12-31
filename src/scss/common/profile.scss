@@ -1,0 +1,48 @@
+.profile {
+
+    &--lk {
+        display: grid;
+        grid-template-columns: 380px auto;
+        grid-gap: 77px;
+        align-items: center;
+    }
+
+    p {
+        color: rgba(7, 23, 13, 0.7);
+    }
+}
+
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__av {
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.profile__text {
+    color: rgba(7, 23, 13, 0.3);
+    text-align: center;
+    font-family: Commissioner;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.profile__btn {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 6px;
+    background: #D7E1EB;
+    height: 35px;
+    padding: 0 17px;
+}

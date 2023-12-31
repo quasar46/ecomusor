@@ -1,0 +1,43 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Профиль
+        .tabs 
+            .tabs__caption 
+                a(href="lk-profile-personal.html") Личные данные
+                a.active Смена пароля
+                a(href="lk-profile-subscribtion.html") Подписка
+            .tabs__content.tabs__content--m 
+                .profile 
+                    form.form
+                        ul.form__list 
+                            li.form__item
+                                label.form__label(for="") Старый пароль
+                                .form__input.form__input--pass
+                                    input.input.input--icn(type="password" placeholder="Введите старый пароль")
+                                    label.label-password(for="show-pass1")
+                                        input.input-password(type="checkbox" id="show-pass1")
+                                        svg.show-pass.form__icn(width="16" height="16")
+                                            use(xlink:href="#pass-icn") 
+                                    a.form__input-link(href="") Забыли пароль 
+                            li.form__item
+                                label.form__label(for="") Новый пароль
+                                .form__input
+                                    input.input.input--icn(type="password" placeholder="Введите новый пароль")
+                                    label.label-password(for="show-pass2")
+                                        input.input-password(type="checkbox" id="show-pass2")
+                                        svg.show-pass.form__icn(width="16" height="16")
+                                            use(xlink:href="#pass-icn") 
+                            li.form__item
+                                label.form__label(for="") Повторите пароль
+                                .form__input
+                                    input.input.input--icn(type="password" placeholder="Введите пароль повторно")
+                                    label.label-password(for="show-pass3")
+                                        input.input-password(type="checkbox" id="show-pass3")
+                                        svg.show-pass.form__icn(width="16" height="16")
+                                            use(xlink:href="#pass-icn") 
+                            
+                .block-footer 
+                    button.btn.btn--g.btn--m Сохранить изменения
+                    button.btn-grey Отменить

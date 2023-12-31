@@ -1,0 +1,16 @@
+.nav-menu {
+    display: flex;
+    gap: 35px;
+    margin-right: auto;
+}
+
+.nav-menu__link {
+    font-family: Commissioner;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

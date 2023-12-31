@@ -1,0 +1,30 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Уведомления
+        .tabs 
+            .tabs__caption 
+                a.active Общие
+                a(href="lk-settings.html") Настройки
+            .tabs__content 
+                .checkbox-block-wrap
+                    .check-type-2 
+                        input(type="checkbox" id="check1")
+                        label(for="check1").check-type-2__label Уведомлять о новых сообщениях
+                        .check-type-2__btn
+                    .check-type-2 
+                        input(type="checkbox" id="check2")
+                        label(for="check2").check-type-2__label Уведомлять об автоматическом закрытии объявления
+                        .check-type-2__btn
+                    .check-type-2 
+                        input(type="checkbox" id="check3")
+                        label(for="check3").check-type-2__label Уведомлять о необходимости пополнения баланса при продлении подписки
+                        .check-type-2__btn
+                    .check-type-2 
+                        input(type="checkbox" id="check4")
+                        label(for="check4").check-type-2__label Уведомлять о списании средств по подписке
+                        .check-type-2__btn
+
+
+

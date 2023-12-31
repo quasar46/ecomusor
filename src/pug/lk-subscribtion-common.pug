@@ -1,0 +1,27 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Подписки
+        .tabs 
+            .tabs__caption 
+                a.active Общие
+                a(href="lk-subscribtion-bmp.html") BMP и вторсырье
+                a(href="lk-subscribtion-services.html") Услуги по РОП
+            .tabs__content.tabs__content--m  
+                .border-l
+                    p Укажите e-mail на который хотите получать уведомления о новых объявлениях продавцов и тип предложения (от кого)
+                form.form
+                    ul.form__list 
+                        li.form__item.form__item--half 
+                            label.form__label(for="") Эл. почта
+                            .form__input
+                                input.input(type="email" placeholder="Ivanivanov@gmail.com")
+                        li.form__item.form__item--half 
+                            label.form__label(for="") Тип предложения
+                            .form__input
+                                select.mySelect
+                                    option(value="") Все категории 
+                                    option(value="") Все категории
+                .block-footer 
+                    button.btn.btn--g.btn--m Сохранить

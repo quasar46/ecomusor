@@ -1,0 +1,110 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Все объявления
+        .sorting.content__sorting
+            span Сотритовать
+            select.mySelect
+                option(value="новые") Новые 
+                option(value="новые") Новые 
+                option(value="новые") Новые 
+        .cards
+            .cards__inner
+                .card(data-time="5 часов назад").selected
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn")
+                    img(src="img/card1.jpg" alt="")
+                    .card__content 
+                        .card__category Резина
+                        a(href="").card__name Отходы резины / Шины, покрышки
+                        ul.card__descr 
+                            li.card__item
+                                span Адрес:
+                                span Московская область
+                            li.card__item 
+                                span Количество:
+                                span 150 шт
+                        hr
+                        .card__footer 
+                            .card__footer-col
+                                .card__price 600 000 руб
+                                .card__nds Без НДС
+                            ul.card__state 
+                                li Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn")
+                    img(src="img/card1.jpg" alt="")
+                    .card__content 
+                        .card__category Резина
+                        a(href="").card__name Отходы резины / Шины, покрышки
+                        ul.card__descr 
+                            li.card__item
+                                span Адрес:
+                                span Московская область
+                            li.card__item 
+                                span Количество:
+                                span 150 шт
+                        hr
+                        .card__footer 
+                            .card__footer-col
+                                .card__price 600 000 руб
+                                .card__nds Без НДС
+                            ul.card__state 
+                                li Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn")
+                    img(src="img/card1.jpg" alt="")
+                    .card__content 
+                        .card__category Резина
+                        a(href="").card__name Отходы резины / Шины, покрышки
+                        ul.card__descr 
+                            li.card__item
+                                span Адрес:
+                                span Московская область
+                            li.card__item 
+                                span Количество:
+                                span 150 шт
+                        hr
+                        .card__footer 
+                            .card__footer-col
+                                .card__price 600 000 руб
+                                .card__nds Без НДС
+                            ul.card__state 
+                                li Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn")
+                    img(src="img/card1.jpg" alt="")
+                    .card__content 
+                        .card__category Резина
+                        a(href="").card__name Отходы резины / Шины, покрышки
+                        ul.card__descr 
+                            li.card__item
+                                span Адрес:
+                                span Московская область
+                            li.card__item 
+                                span Количество:
+                                span 150 шт
+                        hr
+                        .card__footer 
+                            .card__footer-col
+                                .card__price 600 000 руб
+                                .card__nds Без НДС
+                            ul.card__state 
+                                li Идет сбор <br> заявок
+            .pagination 
+                a.pagination__arrow(href="") 
+                    svg(width="21" height="21")
+                        use(xlink:href="#arrow-left-icn")
+                a(href="") 1
+                a.active(href="") 2
+                a(href="") 3
+                a.pagination__dots ... 
+                a(href="") 12
+                a(href="") 13
+                a.pagination__arrow(href="") 
+                    svg(width="21" height="21")
+                        use(xlink:href="#arrow-right-icn")

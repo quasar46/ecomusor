@@ -1,0 +1,115 @@
+.custom-select-container {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sorting .custom-select-container {
+  max-width: 220px;
+  width: 100%;
+}
+
+.sorting .custom-select-opener {
+  height: 42px;
+}
+
+.form .custom-select-container {
+  max-width: 380px;
+  width: 100%;  
+}
+
+.form .custom-select-opener {
+  height: 54px;
+  background-color: #F5F7F9;
+}
+
+.custom-select-container * {
+  box-sizing: border-box;
+  color: #07170D;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.custom-select-container.is-disabled {
+  opacity: .333;
+}
+
+.custom-select-opener {
+  background-color: #ccc;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #E8ECF0;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    background-image: url("../img/icns/CaretDown.svg");
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+  }
+}
+
+.custom-select-container select {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.custom-select-panel {
+  max-height: 0;
+  transition: max-height .5s ease-out, overflow-y 0.1s 0.5s;
+  overflow: hidden;
+  background-color: #e9e9e9;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+}
+
+.custom-select-container.is-open .custom-select-panel {
+  max-height: 10.7em;
+  overflow-y: auto
+}
+
+.custom-select-option {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.custom-select-option.has-focus {
+  background-color: LightBlue;
+}
+
+.custom-select-option.is-selected::before {
+  // content: "✔";
+  // padding-right: 0.5em;
+}
+
+.custom-select-optgroup>.custom-select-option {
+  padding-left: 2em;
+}
+
+.custom-select-optgroup::before {
+  content: attr(data-label);
+  display: block;
+  padding: 0.5em;
+  color: #888;
+}

@@ -1,0 +1,43 @@
+.card-aside__user {
+    border-radius: 6px;
+    border: 1px solid #F4F8FC;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.card-aside__user-pic {
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-aside__user-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-aside__user-descr {
+    margin: 0;
+}
+
+.card-aside__user-icn {
+    width: 26px;
+    height: 26px;
+    margin-left: auto;
+}
+
+.card-aside__user-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-aside__user-descr {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--color-grey-05);
+}

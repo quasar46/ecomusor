@@ -1,0 +1,29 @@
+.header {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    // align-items: center;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 30px;
+    & > *:not(.header__user) {
+        align-self: center;
+    }
+}
+
+.header__btn {
+    margin-right: 30px;
+}
+
+.header__logo {
+    margin-right: 95px;
+}
+
+.header__user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}

@@ -1,0 +1,202 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Чат
+        .chat 
+            .chat__aside 
+                .chat__head     
+                    .chat__input 
+                        svg(width="18" height="18")
+                            use(xlink:href="#search-icn")
+                        input.input(type="text" placeholder="Поиск по всем чатам")
+                    .chat__tabs 
+                        button.chat__tabs-btn.active Все чаты
+                        button.chat__tabs-btn По проектам
+                .chat__items 
+                    .chat__item
+                        img.chat__av(src="img/av-empty.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Чат поддержки
+                                span.chat__name Название компании
+                            .chat__date 15:20
+                    .chat__item
+                        img.chat__av(src="img/av1.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Отходы резины...
+                                span.chat__name Иван Иванович
+                            .chat__date 15:20
+                    .chat__item
+                        img.chat__av(src="img/av2.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Продам оргтехнику
+                                span.chat__name Дмитрий Борисович
+                            .chat__date 15:20
+            .chat__right.chat__right--empty
+                span Выберите, кому хотели бы написать
+
+
+        .chat 
+            .chat__aside 
+                .chat__head     
+                    .chat__input 
+                        svg(width="18" height="18")
+                            use(xlink:href="#search-icn")
+                        input.input(type="text" placeholder="Поиск по всем чатам")
+                    .chat__tabs 
+                        button.chat__tabs-btn.active Все чаты
+                        button.chat__tabs-btn По проектам
+                .chat__items 
+                    .chat__item
+                        img.chat__av(src="img/av-empty.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Чат поддержки
+                                span.chat__name Название компании
+                            .chat__date 15:20
+                    .chat__item
+                        img.chat__av(src="img/av1.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Отходы резины...
+                                span.chat__name Иван Иванович
+                            .chat__date 15:20
+                    .chat__item
+                        img.chat__av(src="img/av2.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Продам оргтехнику
+                                span.chat__name Дмитрий Борисович
+                            .chat__date 15:20
+            .chat__right
+                .chat__right-footer
+                    .chat__item
+                        img.chat__av(src="img/av-empty.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Чат поддержки
+                                span.chat__name Название компании
+                            .chat__actions 
+                                button 
+                                    svg(width="27" height="26")
+                                        use(xlink:href="#dots-icn")
+                                button 
+                                    svg(width="27" height="27")
+                                        use(xlink:href="#close-icn")
+
+                .chat__content
+                    span.chat__content-text В этом чате вы можете задать вопросы менеджеру компании “Название компании”. Здесь можно уточнить информацию по работе с платформами и созданию проектов.
+                    span.chat__content-date 09:41
+                    .chat__content-chats 
+                        .chat__content-item.chat__content-item--right
+                            .chat__content-col 
+                                span Здравствуйте
+                                span У меня проблема с сервисом
+                            img(src="img/av2.png" alt="")
+                        .chat__content-item.chat__content-item--left
+                            .chat__content-col 
+                                span Иван, здравствуйте! Сформулируйте интересующий вопрос, пожалуйста.
+                            img(src="img/av-empty.png" alt="")
+                        .chat__content-item.chat__content-item--right
+                            .chat__content-col 
+                                span Не работают уведомления
+                            img(src="img/av2.png" alt="")
+                        .chat__content-item.chat__content-item--left
+                            .chat__content-col 
+                                span.prints Печатает...
+                            img(src="img/av-empty.png" alt="")
+                    .chat__content-footer 
+                        button
+                            svg(width="26" height="26")
+                                use(xlink:href="#clip-icn")
+                        input.input(type="text" placeholder="Введите текст сообщения")
+                        button
+                            img(src="img/icns/arrow-btn-icn.svg" alt="")
+
+        .chat 
+            .chat__aside 
+                .chat__head     
+                    .chat__input 
+                        svg(width="18" height="18")
+                            use(xlink:href="#search-icn")
+                        input.input(type="text" placeholder="Поиск по всем чатам")
+                    .chat__tabs 
+                        button.chat__tabs-btn.active Все чаты
+                        button.chat__tabs-btn По проектам
+                .chat__items 
+                    .chat__item
+                        img.chat__av(src="img/av-empty.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Чат поддержки
+                                span.chat__name Название компании
+                            .chat__date 15:20
+                    .chat__item
+                        img.chat__av(src="img/av1.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Отходы резины...
+                                span.chat__name Иван Иванович
+                            .chat__date 15:20
+                    .chat__item
+                        img.chat__av(src="img/av2.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Продам оргтехнику
+                                span.chat__name Дмитрий Борисович
+                            .chat__date 15:20
+            .chat__right
+                .chat__right-footer
+                    .chat__item
+                        img.chat__av(src="img/av2.png" alt="")
+                        .chat__item-content
+                            .chat__col 
+                                span.chat__title Отходы резины / Шины, покрышки
+                                span.chat__name Иван Иванович
+                            .chat__actions 
+                                button 
+                                    svg(width="27" height="26")
+                                        use(xlink:href="#dots-icn")
+                                button 
+                                    svg(width="27" height="27")
+                                        use(xlink:href="#close-icn")
+
+                .chat__content
+                    .chat__content-header 
+                        .chat__content-header-title Тема объявления
+                        .chat__content-header__col 
+                            img(src="img/th1.png" alt="")
+                            .chat__content-header-name Отходы резины / Шины, покрышки
+                    span.chat__content-date 09:41
+                    .chat__content-chats 
+                        .chat__content-item.chat__content-item--right
+                            .chat__content-col 
+                                span Здравствуйте
+                                .chat__content-col-media
+                                    a(href="") 
+                                        img(src="img/Objects.svg" alt="")
+                                    a(href="") 
+                                        img(src="img/Rectangle333.png" alt="")
+                                    a(href="") 
+                                        img(src="img/Rectangle333.png" alt="")
+                            img(src="img/av2.png" alt="")
+                        .chat__content-item.chat__content-item--left
+                            .chat__content-col 
+                                span.prints Печатает...
+                            img(src="img/av2.png" alt="")
+
+                    .chat__content-footer.chat__content-footer__file-upload 
+                        //- #drop-area
+                        a#fileSelect(href="#")
+                            svg(width="26" height="26")
+                                use(xlink:href="#clip-icn")
+                        input(type="file" id="fileItem" style="display: none" class="" onchange="handleFiles(this.files)" multiple)
+
+                        input.input(type="text" placeholder="Введите текст сообщения")
+                        button
+                            img(src="img/icns/arrow-btn-icn.svg" alt="")
+                        #fileList 
+

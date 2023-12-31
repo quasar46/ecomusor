@@ -1,0 +1,29 @@
+header.header 
+    a.header__logo.logo(href="index.html")
+        img(src="img/logo.svg", alt="ecomusor") 
+    nav.nav-menu 
+        a.nav-menu__link(href="") 
+            svg(width="20" height="20")
+                use(xlink:href="#icon-12")
+            span Аукционы
+        a.nav-menu__link(href="") О нас
+        a.nav-menu__link(href="") Новости
+    button.header__btn.btn.btn--w.btn--s.btn--icn 
+        <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.38892 7.5L13.6111 7.5" stroke="url(#paint0_linear_26_1224)" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 1.38892L7.5 13.6111" stroke="url(#paint1_linear_26_1224)" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_26_1224" x1="4.03364" y1="6.79464" x2="4.78951" y2="9.71033" gradientUnits="userSpaceOnUse"><stop stop-color="#0DBA48"/><stop offset="1" stop-color="#009B51"/></linearGradient><linearGradient id="paint1_linear_26_1224" x1="7.71639" y1="-7.23212" x2="8.69778" y2="-7.20678" gradientUnits="userSpaceOnUse"><stop stop-color="#0DBA48"/><stop offset="1" stop-color="#009B51"/></linearGradient></defs></svg>
+        span Добавить объявление
+    .header__user 
+        img(src="img/avatar.png", alt="")
+        svg.btnDropdown(width="9" height="5")
+            use(xlink:href="#arrow-down-icn")
+        .dropdown 
+            .dropdown__inner 
+                button.dropdown__close 
+                    svg(width="20" height="20")
+                        use(xlink:href="#close-icn")
+                span.dropdown__name Иван Иванов
+                span.dropdown__email Ivanivanov@gmail.com
+                button.btn.btn--w.btn--xs
+                    span Выйти
+                    svg(width="21" height="21")
+                        use(xlink:href="#exit-icn")
+    

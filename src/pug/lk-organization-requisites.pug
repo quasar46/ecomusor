@@ -1,0 +1,33 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Организация
+        .tabs 
+            .tabs__caption 
+                a(href="lk-organization-common.html") Общие
+                a.active Реквизиты
+                a(href="lk-organization-licenses.html") Лицензии
+            .tabs__content.tabs__content--m  
+                form.form
+                    ul.form__list.form__list--grid.form__list--grid-mode3
+                        li.form__item.ga1 
+                            label.form__label(for="") Название банка
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga2 
+                            label.form__label(for="") БИК
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga3 
+                            label.form__label(for="") Корреспондентский счёт
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga4 
+                            label.form__label(for="") Расчётный счёт
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        
+                .block-footer 
+                    button.btn.btn--g.btn--m Сохранить изменения
+                    button.btn-grey Отменить

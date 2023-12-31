@@ -1,0 +1,8 @@
+.lk {
+    display: grid;
+    grid-template-columns: 264px 1fr;
+    grid-template-areas: 
+        "aside content"
+        "aside footer"
+    ;
+}

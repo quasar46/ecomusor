@@ -1,0 +1,326 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page
+            span Объявление
+            span.status Обьявление в статусе черновика
+        .white-block
+            .border-l
+                p Выберите категорию и тип материала, добавьте описание и фото вашего лота
+            h3.form__title Основное
+            .form
+                .form__list.form__list--common
+                    .form__item 
+                        label.form__label(for="") Тип сделки
+                        .form__input
+                            select.mySelect
+                                option(value="") Выберете из списка
+                                option(value="") Выберете из списка
+                    .form__item.w50
+                        label.form__label(for="") Категория вторсырья
+                        .form__input
+                            select.mySelect
+                                option(value="") Выберете из списка
+                                option(value="") Выберете из списка
+                    i.form__item.w50 
+                        label.form__label(for="") Тип материала
+                        .form__input
+                            select.mySelect
+                                option(value="") Выберете из списка
+                                option(value="") Выберете из списка 
+                    .form__item 
+                        label.form__label(for="") Класс опасности
+                        .form__checks
+                            .form__check 
+                                input(type="radio" id="radio1" name="class" checked)
+                                label(for="radio1") I класс
+                            .form__check 
+                                input(type="radio" id="radio2" name="class")
+                                label(for="radio2") II класс
+                            .form__check 
+                                input(type="radio" id="radio3" name="class")
+                                label(for="radio3") III класс
+                            .form__check 
+                                input(type="radio" id="radio4" name="class")
+                                label(for="radio4") IV класс
+                            .form__check 
+                                input(type="radio" id="radio5" name="class")
+                                label(for="radio5") V класс
+                    .form__item 
+                        label.form__label(for="") Заголовок (минимум 10 символов)
+                        .form__input
+                            input.input(type="text" placeholder="От")
+                    .form__item 
+                        label.form__label(for="") Описание (минимум 10 символов)
+                        .form__input
+                            textarea.textarea.form__textarea(placeholder="Напишите описание")
+                    .form__item
+                        form#form-example-1.form__item(method="post" name="form-example-1" enctype="multipart/form-data")
+                            label.form__label Изображение вторсырья 
+                            .input-field
+                                div.input-images-1
+                    .form__videos
+                        .form__item.w50
+                            .form__input
+                                input.input(type="text" placeholder="Название ссылки на видео") 
+                        .form__item.w50
+                            .form__input 
+                                input.input(type="text" placeholder="http://youtube.com/w...")
+                                button.form__input-delete 
+                                    svg(width="22" height="22") 
+                                        use(xlink:href="#delete-icn")
+                    .form__item.form__btn
+                        button.btn.btn--w.btn--s.btn-icn#btnAddVideo 
+                            <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.38892 7.5L13.6111 7.5" stroke="url(#paint0_linear_26_1224)" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 1.38892L7.5 13.6111" stroke="url(#paint1_linear_26_1224)" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_26_1224" x1="4.03364" y1="6.79464" x2="4.78951" y2="9.71033" gradientUnits="userSpaceOnUse"><stop stop-color="#0DBA48"/><stop offset="1" stop-color="#009B51"/></linearGradient><linearGradient id="paint1_linear_26_1224" x1="7.71639" y1="-7.23212" x2="8.69778" y2="-7.20678" gradientUnits="userSpaceOnUse"><stop stop-color="#0DBA48"/><stop offset="1" stop-color="#009B51"/></linearGradient></defs></svg>
+                            span Добавить ссылку на видео
+
+
+
+
+            .block-footer 
+                button.btn.btn--g.btn--m.next-page Далее
+                button.btn-grey Отменить
+        .white-block.hidden
+            .border-l 
+                p Укажите начальную цену лота, а также сумму мгновенного выкупа (если покупатель найдётся сразу и согласится забрать товар в ближайшее время)
+            h3.form__title Стоимость
+            .form 
+                ul.form__list.form__list--common
+                    li.form__item.w50
+                        .form__label Количество
+                        .form__input
+                            input.input(type="text" placeholder="1") 
+                    li.form__item.w50
+                        .form__label Еденица измерения
+                        .form__input 
+                            select.mySelect
+                                option(value="") Выберете из списка
+                                option(value="") Выберете из списка
+
+                    li.form__item.w50
+                        h4.form__row-title Начальная стоимость
+                        .form__label 
+                            | За еденицу, руб
+                            svg(width="17" height="17")
+                                use(xlink:href="#info-icn")
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w50
+                        .form__label 
+                            | За весь объём, руб
+                            svg(width="17" height="17")
+                                use(xlink:href="#info-icn")
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w50
+                        h4.form__row-title Стоимость мгновенного выкупа
+                        .form__label 
+                            | За еденицу, руб
+                            svg(width="17" height="17")
+                                use(xlink:href="#info-icn")
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w50
+                        .form__label 
+                            | За весь объём, руб
+                            svg(width="17" height="17")
+                                use(xlink:href="#info-icn")
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item 
+                        label.form__label Форма оплаты
+                        .form__checks 
+                            .form__check
+                                input(type="radio" name="payments" id="radiopay1" checked)
+                                label(for="radiopay1") Безналичный расчет с НДС
+                            .form__check
+                                input(type="radio" name="payments" id="radiopay2")
+                                label(for="radiopay2") Безналичный расчет без НДС
+            .block-footer 
+                button.btn.btn--g.btn--m.next-page Далее
+                button.btn-grey.prev-page Назад
+        .white-block.hidden
+            .border-l 
+                p Эта информация поможет покупателю понять, в каком виде он сможет забрать лот (в кипах, россыпью и т.д.)
+            h3.form__title Упаковка
+            .form 
+                ul.form__list.form__list--common
+                    li.form__item.w50
+                        .form__label Тип упаковки
+                        .form__input
+                            select.mySelect
+                                option(value="") Выберете из списка
+                                option(value="") Выберете из списка
+                    li.form__item.w50
+                        .form__label Количество, шт
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+
+                    li.form__item.w33
+                        h4.form__row-title Характеристики одной единицы упаковки
+                        .form__label Ширина, м
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w33
+                        .form__label Длина, м
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w33
+                        .form__label Глубина или высота, м
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w50
+                        .form__label Вес, кг
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w50 
+                        .form__label  
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w50 
+                        h4.form__row-title Общие характеристики груза
+                        .form__label Вес всего груза, т
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+                    li.form__item.w50 
+                        .form__label Объём всего груза, м³
+                        .form__input 
+                            input.input(type="text" placeholder="1")
+            .block-footer 
+                button.btn.btn--g.btn--m.next-page Далее
+                button.btn-grey.prev-page Назад
+        .white-block.hidden 
+            .border-l 
+                p Выберите способ доставки и укажите адрес отгрузки лота. Вы можете указать несколько адресов и добавить информацию об удобном времени отгрузки
+            h3.form__title Адрес
+            .form.form-address(action="") 
+                .form-address__head 
+                    .from-address__input 
+                        input.input(type="text" placeholder="Введите адрес")
+                        svg(width="24" height="24") 
+                            use(xlink:href="#close-input-icn")
+                    button.btn.btn--w.btn--ss Добавить адрес
+
+                #map.map
+                ul.form__list.form__list--common.form__list--30
+                    li.form__item 
+                        label.form__label Перевозка груза
+                        .form__checks 
+                            .form__check 
+                                input(type="radio" id="ship1" name="shipping")
+                                label(for="ship1" ) Самовывоз покупателем
+                            .form__check 
+                                input(type="radio" id="ship2" name="shipping")
+                                label(for="ship2") Готов перевезти самостоятельно
+                    li.form__item 
+                        .check-type-2 
+                            input(type="checkbox" id="check2" checked)
+                            label(for="check2").check-type-2__label Выбрать дни и время отгрузки
+                            .check-type-2__btn
+                    li.form__item 
+                        label.form__label Дни
+                        .form__checks 
+                            .form__check 
+                                input(type="checkbox" id="day1")
+                                label(for="day1" ) Понедельник
+                            .form__check 
+                                input(type="checkbox" id="day2")
+                                label(for="day2") Вторник
+                            .form__check 
+                                input(type="checkbox" id="day3")
+                                label(for="day3") Среда
+                            .form__check 
+                                input(type="checkbox" id="day4")
+                                label(for="day4") Четверг
+                            .form__check 
+                                input(type="checkbox" id="day5")
+                                label(for="day5") Пятница
+                            .form__check 
+                                input(type="checkbox" id="day6")
+                                label(for="day6") Суббота
+                            .form__check 
+                                input(type="checkbox" id="day7")
+                                label(for="day7") Воскресенье
+
+                    li.form__item.w50 
+                        label.form__label Время отгрузки, с
+                        .form__input 
+                            input.input(type="text" placeholder="00:00")
+
+                    li.form__item.w50 
+                        label.form__label Время отгрузки, до
+                        .form__input 
+                            input.input(type="text" placeholder="00:00")
+            .block-footer 
+                button.btn.btn--g.btn--m.next-page Далее
+                button.btn-grey.prev-page Назад
+
+        .white-block.hidden 
+            .border-l 
+                p Здесь вы можете указать информацию, которую считаете важной для покупателя
+            form.form
+                h3.form__title Дополнительно
+                ul.form__list
+                    li.form__item 
+                        .form__row-title Весы
+                        .form__checks 
+                            .form__check    
+                                input(type="checkbox" id="add1")
+                                label(for="add1")  Есть весы на объекте
+                    li.form__item 
+                        .form__row-title Весы
+                        .form__checks 
+                            .form__check    
+                                input(type="checkbox" id="add2")
+                                label(for="add2")  Погрузка силами продавца
+                    li.form__item
+                        .label(for="")  Документы
+                        .form__file.input-file#drop-area
+                            label(for="file").input-file-text Нажмите, чтобы загрузить или перетащите файл <br> docx, pdf, xlsx, doc, xls, jpg, png, zip, rar, 7z, gzip, tar
+                            input(type="file" id="file-input" class="input-file-btn" multiple)
+                            button.form__file-drop#browserBtn
+                        #preview
+                    li.form__item 
+                        label.form__label Комментарий (не обязательно)
+                        textarea.textarea.form__textarea(placeholder="Любая информация, которая будет полезна покупателю")
+
+            .block-footer 
+                button.btn.btn--g.btn--m.next-page Далее
+                button.btn-grey.prev-page Назад
+
+        .white-block.hidden 
+            .border-l 
+                p Здесь вы можете указать информацию, которую считаете важной для покупателя
+            form.form
+                h3.form__title Аукцион
+                ul.form__list.form__list--common
+                    li.form__item.w50
+                        .form__input.form__date
+                            input.input#airpicker(autocomplete="off")
+                    li.form__item.w50 
+                        .form__input
+                            select.mySelect
+                                option(value="") 15:30
+                                option(value="") 15:30
+                    li.form__item 
+                        h4.form__row-title Вид аукциона
+                        .form__checks 
+                            .form__check 
+                                input(type="checkbox" id="closed-check")
+                                label(for="closed-check")  Закрытый
+                    li.form__item 
+                        h4.form__row-title Продлять аукцион, если не было ставок
+                        .form__checks 
+                            .form__check 
+                                input(type="checkbox" id="extend-check")
+                                label(for="extend-check")  Продлять
+
+
+
+
+            .block-footer 
+                .block-footer__btns
+                    button.btn.btn--g.btn--m Опубликовать
+                    button.btn.btn--w.btn--m Сохранить в черновик
+                button.btn-grey.prev-page Назад

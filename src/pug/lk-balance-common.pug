@@ -1,0 +1,31 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Баланс
+        .tabs 
+            .tabs__caption 
+                a.active Основное
+                a(href="lk-balance-history.html") История
+                a(href="lk-balance-withdrawal.html") Вывод средств
+            .tabs__content.tabs__content--m  
+                .grey-block 
+                    ul.balance-list 
+                        li.balance-list__item
+                            span Доступная сумма:
+                            span 680 000 руб
+                        li.balance-list__item
+                            span Зарезервировано:
+                            span 0 руб
+                        li.balance-list__item
+                            span Ожидает завершения сделки:
+                            span 1 930 000 руб
+                        li.balance-list__item
+                            span Сумма на счёте:
+                            span 680 000 руб
+                .block-footer 
+                    .block-footer__head
+                        h3.block-footer__title Пополнение баланса
+                        p.block-footer__text Введите сумму, на которую хотите пополнить баланс. Скачайте и оплатите счёт в отделении банка или через QR-код в мобильном приложении банка.
+                    input.input(type="text" placeholder="Введите сумму")
+                    button.btn.btn--g.btn--m Выставить счёт

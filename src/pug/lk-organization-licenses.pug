@@ -1,0 +1,24 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Организация
+        .tabs 
+            .tabs__caption 
+                a(href="lk-organization-common.html") Общие
+                a(href="lk-organization-requisites.html") Реквизиты
+                a.active Лицензии
+            .tabs__content.tabs__content--m  
+                .license.grey-block 
+                    .license__pic 
+                        img(src="img/license.jpg", alt="")
+                    .license__content
+                        .license__title Лицензия №07710 от 08.02.2018
+                        ul.license__list
+                            li.license__item.license__item-head Вид работ: 
+                            li.license__item Транспортирование отходов II класса опасности
+                            li.license__item Транспортирование отходов III класса опасности
+                            li.license__item Транспортирование отходов IV класса опасности
+                .block-footer 
+                    button.btn.btn--g.btn--m Добавить лицензию
+                    button.btn-grey Отменить

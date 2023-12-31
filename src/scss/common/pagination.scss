@@ -1,0 +1,37 @@
+.pagination {
+    display: inline-block;
+    margin: auto;
+    margin-top: 50px;
+
+    &>* {
+        float: left;
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0 5px;
+        height: 37px;
+        width: 39px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        
+
+      
+        &:not(.pagination__dots, .pagination__arrow) {
+            background-color: #fff;
+            border: 1px solid #fff;
+            &.active {
+                border-color: #0DBA48;
+            }
+        }
+    }
+    &__dots {
+        align-items: flex-end;
+    }
+}

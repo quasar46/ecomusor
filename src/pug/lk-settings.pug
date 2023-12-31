@@ -1,0 +1,50 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Уведомления
+        .tabs 
+            .tabs__caption 
+                a(href="lk-common.html") Общие
+                a.active Настройки
+            .tabs__content 
+                .tabs__content-head
+                    include include/filter-pan
+                .tabs__actions 
+                    .check-label 
+                        input(type="checkbox" id="check10")
+                        label(for="check10") Выбрать все
+                    button.btn-grey 
+                        svg(width="24" height="24")
+                            use(xlink:href="#close-icn")
+                        span Удалить
+                .checkbox-block-wrap
+                    .checkbox-block 
+                        .check 
+                            input(type="checkbox" id="check1")
+                            label(for="check1")
+                        .checkbox-block__content
+                            .checkbox-block__name Аукцион Отходы резины / Шины, покрышки
+                            .checkbox-block__descr Контрагент Иван Иванович из компании добавил аукцион в избранное
+                        .checkbox-block__date 
+                            span 23.03.2023
+                    .checkbox-block 
+                        .check 
+                            input(type="checkbox" id="check2")
+                            label(for="check2")
+                        .checkbox-block__content
+                            .checkbox-block__name Аукцион Отходы резины / Шины, покрышки
+                            .checkbox-block__descr Контрагент Иван Иванович из компании добавил аукцион в избранное
+                        .checkbox-block__date 
+                            span 23.03.2023
+                    .checkbox-block 
+                        .check 
+                            input(type="checkbox" id="check3")
+                            label(for="check3")
+                        .checkbox-block__content
+                            .checkbox-block__name Аукцион Отходы резины / Шины, покрышки
+                            .checkbox-block__descr Контрагент Иван Иванович из компании добавил аукцион в избранное
+                        .checkbox-block__date 
+                            span 23.03.2023
+
+

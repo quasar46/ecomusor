@@ -1,0 +1,60 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Организация
+        .tabs 
+            .tabs__caption 
+                a.active Общие
+                a(href="lk-organization-requisites.html") Реквизиты
+                a(href="lk-organization-licenses.html") Лицензии
+            .tabs__content.tabs__content--m  
+                form.form
+                    ul.form__list.form__list--grid.form__list--grid-mode2
+                        li.form__item.ga1 
+                            label.form__label(for="") Полное наименование
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga2 
+                            label.form__label(for="") Краткое наименование
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga3 
+                            label.form__label(for="") ИНН
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga4 
+                            label.form__label(for="") КПП
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga5 
+                            label.form__label(for="") ОГРН
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga6 
+                            label.form__label(for="") ФИО руководителя
+                            .form__input
+                                input.input(type="text" placeholder="Иванов Иван Иванович")
+                        li.form__item.ga7 
+                            label.form__label(for="") Эл. почта
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga8 
+                            label.form__label(for="") Телефон
+                            .form__input
+                                input.input.tel(type="text" placeholder="+7 (961) 379-28-29")
+                        li.form__item.ga9 
+                            label.form__label(for="") Мобильный телефон
+                            .form__input
+                                input.input.tel(type="text" placeholder="+7 (961) 379-28-29")
+                        li.form__item.ga10 
+                            label.form__label(for="") Юридический адрес
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                        li.form__item.ga11
+                            label.form__label(for="") Фактический адрес
+                            .form__input
+                                input.input(type="text" placeholder="—")
+                .block-footer 
+                    button.btn.btn--g.btn--m Сохранить изменения
+                    button.btn-grey Отменить

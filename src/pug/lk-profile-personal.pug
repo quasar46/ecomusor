@@ -1,0 +1,43 @@
+extends templates/layout
+
+block content
+    .content
+        h1.title-page Профиль
+        .tabs 
+            .tabs__caption 
+                a.active Личные данные
+                a(href="lk-profile-pass.html") Смена пароля
+                a(href="lk-profile-subscribtion.html") Подписка
+            .tabs__content.tabs__content--m.tabs__content--lk 
+                .profile.profile--lk 
+                    form.form
+                        ul.form__list 
+                            li.form__item.form__item--half
+                                label.form__label(for="") Фамилия
+                                .form__input
+                                    input.input(type="text" placeholder="Иванов")
+                            li.form__item.form__item--half
+                                label.form__label(for="") Имя
+                                .form__input
+                                    input.input(type="text" placeholder="Иван")
+                            li.form__item.form__item--half
+                                label.form__label(for="") Имя
+                                .form__input
+                                    input.input(type="text" placeholder="Иванович")
+                            li.form__item.form__item--half
+                                label.form__label(for="") Эл. почта
+                                .form__input
+                                    input.input(type="email" placeholder="Ivanivanov@gmail.com")
+                            li.form__item.form__item--half
+                                label.form__label(for="") Телефон
+                                .form__input
+                                    input.input.tel(type="text" placeholder="+7 (961) 379-28-29")
+                    .profile__info 
+                        .profile__av 
+                            img(src="img/bi_image-alt.jpg", alt="")
+                        .profile__text 
+                            p Можно загрузить изображение в формате png, jpg или gif. Минимальный размер 400 × 400 px, объём файла не более 7 МБ
+                        button.profile__btn Добавить файл
+                .block-footer 
+                    button.btn.btn--g.btn--m Сохранить изменения
+                    button.btn-grey Отменить
